@@ -1,35 +1,46 @@
-<h1 align="center">⚡ Automated Powerlevel10k Installer ⚡</h1>
-<p align="center">
-  A simple, fast, one-command setup for the <strong>Powerlevel10k</strong> Zsh theme.<br>
-  Because customizing your shell manually is so 2015.
-</p>
+# Powerlevel10k Automated Installer
+
+![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS-blue)
+![Shell](https://img.shields.io/badge/Shell-Zsh-green)
+![Powerlevel10k](https://img.shields.io/badge/Theme-Powerlevel10k-purple)
+![Status](https://img.shields.io/badge/Automation-100%25-success)
+
+A fully automated installer for **Zsh**, **Powerlevel10k**, Nerd Fonts, and optional plugin frameworks (Oh My Zsh, Antigen, or manual setup).  
+This script configures a complete Zsh environment with minimal user interaction.
 
 ---
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Zsh-P10K-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Automation-100%25-green?style=for-the-badge">
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge">
-</p>
+## Features
+
+### ✔ Automated Setup
+- Installs Zsh and sets it as the default shell  
+- Installs Powerlevel10k  
+- Installs MesloLGS Nerd Fonts  
+- Sets up plugins automatically  
+- Writes and backs up `.zshrc`  
+- Works on Linux and macOS  
+
+### ✔ Plugin Support
+Depending on installation method, the script installs and activates:
+
+- `zsh-autosuggestions`  
+- `zsh-syntax-highlighting`  
+
+### ✔ Multiple Installation Methods
+- **Oh My Zsh**  
+- **Antigen**  
+- **Manual setup**  
+
+Choose what fits your workflow.
 
 ---
 
-## ✨ Features
+## Installation
 
-- Fully automated Powerlevel10k installation  
-- Optional plugin installation  
-- Auto-detection of package managers  
-- Drop-in `.p10k.zsh` config  
-- Updates your `.zshrc` automatically  
-- Compatible with most Linux distros and macOS  
-- No manual steps required
-
----
-
-## 🚀 Installation
-
-Clone the repository:
+Clone the repository and run the installer:
 
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/<yourname>/<reponame>.git
+cd <reponame>
+chmod +x install.sh
+./install.sh
